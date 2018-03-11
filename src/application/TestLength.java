@@ -1,5 +1,10 @@
 package application;
 
+/**
+ * Test enum Length
+ * @author Phanuwatch Luangpradit
+ *
+ */
 public class TestLength {
 
 	public static void main(String[] args) {

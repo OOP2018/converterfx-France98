@@ -7,8 +7,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
-
+/**
+ * Main of the program
+ * @author Phanuwatch Luangpradit
+ *
+ */
 public class Main extends Application {
+	/**
+	 * Start the program using GUI from fxml.
+	 */
 	@Override
 	public void start(Stage stage) {
 		try {

@@ -1,5 +1,10 @@
 package application;
 
+/**
+ * Fixed the set of static instances.
+ * @author Phanuwatch Luangpradit
+ *
+ */
 public enum Length {
 
 	Mile(1609.344),

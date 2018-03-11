@@ -6,6 +6,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
+/**
+ * UI controller for events and initializing components.
+ * @author Phanuwatch Luangpradit
+ *
+ */
 public class ConverterController {
 
 	@FXML
@@ -21,6 +26,10 @@ public class ConverterController {
 	@FXML 
 	private ComboBox<Length> combo2;
 
+	/**
+	 * Convert a distance from one unit to another.
+	 * @param event
+	 */
 	public void handleConvert(ActionEvent event) {
 		double first = 0;
 		double second = 0;
@@ -64,6 +73,10 @@ public class ConverterController {
 
 	}
 
+	/**
+	 * Clear the TextField and change the color to black
+	 * @param event
+	 */
 	public void handleClear(ActionEvent event) {
 		tx1.clear();
 		tx2.clear();
@@ -71,6 +84,14 @@ public class ConverterController {
 		tx2.setStyle("-fx-text-inner-color: black;");
 	}
 	
+	/**
+	 * JavaFX calls the initialize() method of your controller when
+	 * it creates the UI from, after the components have been created
+	 * and @FXML annotated attributes have been set.
+	 * 
+	 * This is a hook to initialize anything your controller or UI needs.
+ 	 */
+	@FXML
 	public void initialize(){
 		System.out.println("Running initialize");
 		if(combo1 != null){
